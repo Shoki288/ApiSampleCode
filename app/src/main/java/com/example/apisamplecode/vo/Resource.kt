@@ -1,4 +1,4 @@
-package com.example.apisamplecode
+package com.example.apisamplecode.vo
 
 enum class Status { LOADING, SUCCESS, ERROR }
 data class Resource<out T>(val state: Status, val data: T?, val errorCode: Int?) {

@@ -1,13 +1,15 @@
-package com.example.apisamplecode
+package com.example.apisamplecode.productlist
 
 import android.util.Log
 import android.view.View
 import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestManager
+import com.example.apisamplecode.R
 import com.example.apisamplecode.databinding.ArticleItemBinding
+import com.example.apisamplecode.productlist.viewmodels.Article
 import com.xwray.groupie.viewbinding.BindableItem
 
-class ArticleListItemAdapter(private val item:  Article, private val listener: ItemListener): BindableItem<ArticleItemBinding>() {
+class ArticleListItemAdapter(private val item: Article, private val listener: ItemListener): BindableItem<ArticleItemBinding>() {
     lateinit var glide: RequestManager
 
     override fun bind(viewBinding: ArticleItemBinding, position: Int) {

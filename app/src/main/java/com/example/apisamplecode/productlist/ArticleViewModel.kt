@@ -1,10 +1,13 @@
-package com.example.apisamplecode
+package com.example.apisamplecode.productlist
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.apisamplecode.productlist.viewmodels.Article
+import com.example.apisamplecode.productlist.viewmodels.ArticleListRepository
+import com.example.apisamplecode.vo.Resource
 import io.reactivex.SingleObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable

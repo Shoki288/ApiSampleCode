@@ -1,4 +1,4 @@
-package com.example.apisamplecode
+package com.example.apisamplecode.productlist
 
 import android.os.Bundle
 import android.util.Log
@@ -8,13 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.apisamplecode.*
 import com.example.apisamplecode.databinding.FragmentProductListBinding
+import com.example.apisamplecode.productlist.viewmodels.Article
+import com.example.apisamplecode.productlist.viewmodels.ArticleListRepository
+import com.example.apisamplecode.vo.Status
 import com.xwray.groupie.Group
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder

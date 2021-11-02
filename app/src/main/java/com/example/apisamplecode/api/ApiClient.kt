@@ -1,4 +1,4 @@
-package com.example.apisamplecode
+package com.example.apisamplecode.api
 
 import com.google.gson.FieldNamingPolicy
 import com.google.gson.GsonBuilder

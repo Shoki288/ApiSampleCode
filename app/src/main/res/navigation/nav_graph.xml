@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/topFragment"
-        android:name="com.example.apisamplecode.TopFragment"
+        android:name="com.example.apisamplecode.top.TopFragment"
         android:label="fragment_top"
         tools:layout="@layout/fragment_top" >
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/productListFragment"
-        android:name="com.example.apisamplecode.ProductListFragment"
+        android:name="com.example.apisamplecode.productlist.ProductListFragment"
         android:label="fragment_product_list"
         tools:layout="@layout/fragment_product_list" >
         <action
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/productDetailFragment"
-        android:name="com.example.apisamplecode.ProductDetailFragment"
+        android:name="com.example.apisamplecode.detail.ProductDetailFragment"
         android:label="fragment_product_detail"
         tools:layout="@layout/fragment_product_detail" >
         <argument

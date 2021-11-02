@@ -1,4 +1,4 @@
-package com.example.apisamplecode
+package com.example.apisamplecode.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

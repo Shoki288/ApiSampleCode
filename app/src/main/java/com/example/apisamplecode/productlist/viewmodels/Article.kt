@@ -1,4 +1,4 @@
-package com.example.apisamplecode
+package com.example.apisamplecode.productlist.viewmodels
 
 import com.google.gson.annotations.SerializedName
 

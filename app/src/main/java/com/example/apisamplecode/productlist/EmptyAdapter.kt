@@ -1,6 +1,7 @@
-package com.example.apisamplecode
+package com.example.apisamplecode.productlist
 
 import android.view.View
+import com.example.apisamplecode.R
 import com.example.apisamplecode.databinding.EmptyLayoutBinding
 import com.xwray.groupie.viewbinding.BindableItem
 
