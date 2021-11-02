@@ -10,12 +10,12 @@ import com.example.apisamplecode.productlist.viewmodels.Article
 import com.xwray.groupie.viewbinding.BindableItem
 
 class ArticleListItemAdapter(private val item: Article, private val listener: ItemListener): BindableItem<ArticleItemBinding>() {
-    lateinit var glide: RequestManager
+    private lateinit var glide: RequestManager
 
     override fun bind(viewBinding: ArticleItemBinding, position: Int) {
         viewBinding.apply {
             itemTitle.text = item.title
-            itemLikesCount.text = "(${item.likesCount})"
+            itemLikesCount.text = item.likesCount.toString()
             val img = item.user?.profileImageUrl ?: R.color.black
             glide.load(img).into(profileImg)
             root.setOnClickListener {
