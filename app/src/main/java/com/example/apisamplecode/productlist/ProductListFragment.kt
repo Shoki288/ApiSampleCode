@@ -35,7 +35,6 @@ class ProductListFragment : Fragment(), ArticleListItemAdapter.ItemListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Log.d("hogehoge", args.searchWord)
         viewModel.searchRequest(args.searchWord)
         start = System.currentTimeMillis()
     }
@@ -76,21 +75,16 @@ class ProductListFragment : Fragment(), ArticleListItemAdapter.ItemListener {
                 } else {
                     val list = mutableListOf<Group>()
                     articles.forEach { item -> list.add(ArticleListItemAdapter(item, this@ProductListFragment)) }
-//                    (1 until articles.size).map { item ->
-//                        list.add(ArticleListItemAdapter(articles[item], this@ProductListFragment))
-//                    }
                     addAll(list)
-                    Log.d("hogehoge", (System.currentTimeMillis() - start).toString())
                 }
             }
             it.adapter = adapter
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
-        Log.d("hogehoge", "list onDestroy")
     }
 
     override fun onClickItem(pos: Int) {

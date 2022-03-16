@@ -26,7 +26,6 @@ class ArticleListItemAdapter(private val item: Article, private val listener: It
 
     override fun getLayout(): Int = R.layout.article_item
     override fun initializeViewBinding(view: View): ArticleItemBinding {
-        Log.d("hogehoge", "initializeViewBinding")
         glide = Glide.with(view)
         return ArticleItemBinding.bind(view)
     }

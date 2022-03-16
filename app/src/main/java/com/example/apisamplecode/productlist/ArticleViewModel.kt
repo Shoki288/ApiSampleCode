@@ -22,7 +22,6 @@ class ArticleViewModel(private val repository: ArticleListRepository): ViewModel
 
     override fun onCleared() {
         super.onCleared()
-        Log.d("hogehoge", "onClear")
         disposable.clear()
     }
 
@@ -34,7 +33,6 @@ class ArticleViewModel(private val repository: ArticleListRepository): ViewModel
                 override fun onSubscribe(d: Disposable) {
                     disposable.add(d)
                 }
-
                 override fun onSuccess(t: List<Article>) {
                     _searchResult.postValue(Resource.success(t))
                 }
